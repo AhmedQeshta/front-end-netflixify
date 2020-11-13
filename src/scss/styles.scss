@@ -1,20 +1,21 @@
-
 @import "../bootstrap/functions";
 @import "../bootstrap/variables";
 
-
+//pages
+@import "pages/index";
 @import "pages/login";
-
+@import "pages/register";
 //body{
 //  font-family: 'Roboto', sans-serif;
 //}
-.fw-300{
+.fw-300 {
   font-weight: 300;
 }
 
-.fw-500{
+.fw-500 {
   font-weight: 500;
 }
-.fw-700{
+
+.fw-700 {
   font-weight: 700;
 }
