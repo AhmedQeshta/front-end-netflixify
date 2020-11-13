@@ -1,6 +1,33 @@
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+  border-radius: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #393939;
+  transition: all 0.35s ease-in;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #222222;
+}
+
+
 #banner {
   .form-control[type="search"]::placeholder {
     color: lightgray;
+  }
+
+  .movies {
+    cursor: pointer;
   }
 
   .movie {
@@ -34,6 +61,84 @@
       font-weight: 300;
       line-height: 2rem;
       text-align: justify;
+    }
+  }
+}
+
+.listing {
+
+  .movie {
+    background: $black;
+    position: relative;
+    transition: all 0.25s ease-in;
+
+    img {
+      transition: all 0.25s ease-in;
+    }
+
+    &:hover img {
+      opacity: 0.6;
+    }
+
+    &:hover .movie__details {
+      opacity: 1;
+    }
+
+    .movie__details {
+      position: absolute;
+      bottom: 1rem;
+      left: 10px;
+      right: 10px;
+      opacity: 0;
+      transition: all 0.25s ease-in;
+    }
+
+    .movie__name {
+      font-size: 1.5rem;
+    }
+
+    .movie__rating {
+      .fa-star {
+        font-size: .9rem;
+      }
+    }
+
+    .movie__fav-button {
+      font-size: 1.5rem;
+
+      &:hover {
+        font-weight: 900;
+      }
+    }
+
+
+  }
+}
+
+footer {
+  .social_icons {
+    .fa-facebook {
+      transition: all 0.35s ease-in-out;
+
+      &:hover {
+        color: #3b5998;
+      }
+    }
+
+    .fa-youtube {
+      transition: all 0.35s ease-in-out;
+
+      &:hover {
+        color: #dd4b39;
+      }
+    }
+
+    .fa-twitter {
+      transition: all 0.35s ease-in-out;
+
+      &:hover {
+        color: #3786a0;
+      }
     }
   }
 }

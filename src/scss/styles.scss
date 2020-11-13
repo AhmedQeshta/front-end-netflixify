@@ -3,11 +3,20 @@
 
 //pages
 @import "pages/index";
+@import "pages/show";
 @import "pages/login";
 @import "pages/register";
-//body{
-//  font-family: 'Roboto', sans-serif;
-//}
+
+body {
+  //font-family: 'Roboto', sans-serif;
+  background: $black;
+}
+
+.bg-black-transparent {
+  transition: all 0.35s ease-in-out;
+  background: rgba($black, 0.8);
+}
+
 .fw-300 {
   font-weight: 300;
 }
