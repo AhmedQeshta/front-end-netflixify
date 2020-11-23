@@ -7,3 +7,12 @@ $(document).ready(function () {
         }
     })
 })
+
+$(document).ready(function () {
+    $(window).on('load',function () {
+        setTimeout(function(){ $('#loadingScrean').addClass('displayNone') }, 1500); // 1.5 sec
+    })
+})
+
+
+
